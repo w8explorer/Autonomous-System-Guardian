@@ -4,73 +4,54 @@
 > **Powered by AI-CodeCompass Intelligence Suite**
 
 [![Project Identity](https://img.shields.io/badge/Identity-Autonomous_System_Observer-blueviolet?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
-[![Intelligence](https://img.shields.io/badge/Intelligence-Structural_AST-blue?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
+[![Intelligence](https://img.shields.io/badge/Intelligence-Elite_Adaptive_RAG-blue?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 [![Memory](https://img.shields.io/badge/Memory-Semantic_FAISS-success?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 
-## 📋 Overview: What is the Observer?
+## 📋 Simple Overview: What is the Observer?
 
-The **Autonomous System Observer** is like a high-tech security specialist for your code. While traditional tools just tell you *that* a file changed, the Observer understands **what** changed and **why** it matters.
+Imagine you have a **Super-Smart Robot Teacher** living inside your computer. The **Autonomous System Observer** doesn't just watch your files; it understands them like a human would.
 
-1. **🛡️ The Watchman**: It performs autonomous sweeps every 15 minutes to ensure your system is secure.
-2. **👁️ X-Ray Vision**: It looks *inside* your code to identify specific changes in functions and logic.
-3. **🧠 The Giant Brain**: It remembers every scan in a searchable memory database, so it never forgets your project's history.
-4. **📄 The Chronicler**: It turns complex system events into a simple, readable "Security Diary" (`PROJECT_DIGEST.md`).
-
----
-
-## 🚀 Advanced Features
-
-### 👁️ Structural Intelligence ("Deep Eyes")
-Powered by the `ParserAgent`, the Observer performs deep AST (Abstract Syntax Tree) analysis on every modified file.
-- **Logic Awareness**: Detects specific changes in functions, classes, and logic blocks.
-- **Complexity Analysis**: Identifies potential technical debt or security risks introduced by code changes.
-
-### 🧠 Semantic Memory ("Giant Brain")
-Integrated with a **FAISS Vector Store**, the Observer never forgets.
-- **Persistent Context**: Indexes every security report into a searchable vector database.
-- **RAG-Ready**: Future-proof architecture allowed for Retrieval-Augmented Generation over historical system events.
-
-### 🛡️ Autonomous Security Auditing
-The Observer is designed to run silently and autonomously in the background.
-- **15-Minute Sweeps**: Periodic filesystem scans triggered by the native `scanner.sh` scout.
-- **Human-in-the-Loop**: Optional interactive mode allows developers to provide context "notes" during critical changes.
+1. **🕵️‍♂️ The Watchman**: It checks your code every 15 minutes to make sure everything is safe.
+2. **👁️ X-Ray Vision**: It looks *deep* inside your code (like an X-ray) to see exactly how your logic is changing.
+3. **🧠 The Giant Brain**: It remembers every single scan in a searchable memory database.
+4. **💬 The Expert Consultant**: You can actually **talk** to it! Ask it about your project history, security risks, or how a specific function works.
+5. **📄 The Chronicler**: It writes a simple "Security Diary" (`PROJECT_DIGEST.md`) so you can see what happened while you were away.
 
 ---
 
-## 🛠️ Architecture
+## 🚀 Advanced Super-Powers
 
-The Observer is orchestrated using **LangGraph**, ensuring a reliable and deterministic flow between sensing, thinking, and reporting.
+### 🧠 Expert Intelligence (Adaptive RAG)
+Your Observer is now equipped with an **"Elite Rank" reasoning engine**. When you ask a question, it doesn't just search; it **thinks**:
+- **Rewriting**: It técnico-fies your question to find better evidence.
+- **Evidence Grading**: It analyzes what it finds and throws away useless noise.
+- **Self-Reflection**: It double-checks its own answer to make sure it isn't "hallucinating" (making things up).
 
-```mermaid
-graph TD
-    A[Filesystem Scanner] -->|Change Detected| B(Observer Agent)
-    B --> C{Structural Analysis}
-    C -->|Deep Eyes| D[ParserAgent]
-    D --> E{AI Summarization}
-    E --> F[PROJECT_DIGEST.md]
-    F --> G[Semantic Memory Update]
-    G --> H[FAISS Vector Store]
+### 👁️ Structural Literacy ("Deep Eyes")
+Powered by the `ParserAgent`, the Observer performs deep AST analysis.
+- **Logic Awareness**: It knows which function changed, not just which line.
+- **Dependency Tracking**: It understands how one piece of code affects another.
+
+---
+
+## 🛠️ Usage: How to Talk to the Observer
+
+### 1. Interactive Q&A Mode (Recommended)
+Launch a live session with the Observer to ask multiple questions about your code:
+```bash
+/home/ubuntu/llm_pipeline_env/bin/python3 observer.py --interactive
 ```
 
----
-
-## 📦 Getting Started
-
-### 1. Requirements
-- **OS**: Ubuntu / Debian (ARM64 Optimized)
-- **AI Backend**: `llama.cpp` or OpenAI-compatible server (default: port 1234)
-- **Environment**: Python 3.12+ (Virtual Environment Recommended)
-
-### 2. Manual Activation
-Run a high-intelligence scan manually to see the Observer in action:
+### 2. Quick Technical Consultation
+Ask a one-shot technical question directly from the terminal:
 ```bash
-/home/ubuntu/llm_pipeline_env/bin/python3 observer.py
+python3 observer.py --query "What are the security risks in the scan script?"
 ```
 
-### 3. Background Automation
-The Observer is typically scheduled via Crontab:
+### 3. Background Watcher
+The Observer is always watching in the background via Crontab:
 ```bash
-*/15 * * * * /bin/bash /home/ubuntu/AI-CodeCompass/scripts/scanner.sh
+*/15 * * * * /bin/bash /home/ubuntu/AI-CodeCompass/scripts/observer_scanner.sh
 ```
 
 ---
@@ -78,10 +59,10 @@ The Observer is typically scheduled via Crontab:
 ## 🧠 Technology Stack
 
 - **Orchestration**: LangGraph, LangChain
+- **Reasoning**: Adaptive RAG (Workflow-based retrieval)
 - **Vector Store**: FAISS (Facebook AI Similarity Search)
 - **Code Parsing**: Tree-sitter, AST-Python
 - **LLM Support**: Llama 3.2 1B Instruct (via llama.cpp)
-- **Persistence**: SQLite (Session History), FAISS (Semantic Memory)
 
 ---
 

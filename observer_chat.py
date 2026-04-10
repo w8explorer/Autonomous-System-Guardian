@@ -1,3 +1,7 @@
+#!/home/ubuntu/llm_pipeline_env/bin/python3
+"""
+Interactive chat interface for the LangGraph workflow
+"""
 import os
 import sys
 import logging
