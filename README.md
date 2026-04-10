@@ -66,6 +66,11 @@ The Observer is always watching in the background via Crontab:
 
 ---
 
+## 🙏 Acknowledgements
+The high-accuracy **Adaptive RAG Engine** (Query Rewriting, Document Grading, and Self-Reflection) is integrated from the [Intelligent-Code-Insights](https://github.com/vin082/Intelligent-Code-Insights) repository by **vin082**. This project leverages those proven reasoning loops to provide elite-rank technical consultations.
+
+---
+
 ## 🔐 Security & Privacy
 The Observer is built for **local execution**. All code analysis and memory indexing happen on your server, ensuring that your logic and system state never leave your infrastructure.
 
