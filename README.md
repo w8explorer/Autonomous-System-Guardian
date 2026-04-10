@@ -7,11 +7,14 @@
 [![Intelligence](https://img.shields.io/badge/Intelligence-Structural_AST-blue?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 [![Memory](https://img.shields.io/badge/Memory-Semantic_FAISS-success?style=for-the-badge)](https://github.com/w8explorer/AI-CodeCompass)
 
-## 📋 Overview
+## 📋 Overview: What is the Guardian?
 
-The **Autonomous System Guardian** is a high-intelligence monitoring and security suite designed to protect and document local Linux environments. It transforms raw filesystem activity into structured, actionable intelligence using advanced AST parsing and semantic vector memory.
+The **Autonomous System Guardian** is like a high-tech security specialist for your code. While traditional tools just tell you *that* a file changed, the Guardian understands **what** changed and **why** it matters.
 
-Unlike traditional monitoring tools, the Guardian understands **what** changed in your code (at the function and class level) and **why** it matters, maintaining a persistent "Giant Brain" of your project's history.
+1. **🛡️ The Watchman**: It performs autonomous sweeps every 15 minutes to ensure your system is secure.
+2. **👁️ X-Ray Vision**: It looks *inside* your code to identify specific changes in functions and logic.
+3. **🧠 The Giant Brain**: It remembers every scan in a searchable memory database, so it never forgets your project's history.
+4. **📄 The Chronicler**: It turns complex system events into a simple, readable "Security Diary" (`PROJECT_DIGEST.md`).
 
 ---
 
